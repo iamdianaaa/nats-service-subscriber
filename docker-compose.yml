@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: someone
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: messages_db
+    ports:
+      - "5432:5432"
+
+  nats:
+      image: nats:latest
+      ports:
+        - "4222:4222"
+        - "8222:8222"
+
+
