@@ -1,0 +1,4 @@
+nats-py
+asyncio-nats-client
+sqlalchemy==1.4.46
+psycopg2-binary==2.9.6
